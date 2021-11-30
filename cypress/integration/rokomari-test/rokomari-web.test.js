@@ -133,7 +133,7 @@ describe('Rokomari Test', () => {
     });
 
     // Top Bar
-    it('Top Bar', () => {
+    it('Top Bar Test', () => {
         // 1. Book
         cy.contains("বই").click({ force: true });
         cy.url().should("eq", "https://www.rokomari.com/book?ref=nm");
