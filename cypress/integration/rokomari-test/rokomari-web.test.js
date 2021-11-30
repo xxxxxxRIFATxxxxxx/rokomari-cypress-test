@@ -20,7 +20,7 @@ describe('Rokomari Test', () => {
         cy.url().should("include", "https://www.rokomari.com/login");
         cy.get('form').within(() => {
             cy.get('#j_username').type('01688329403', { force: true });
-            cy.get('#j_password').type('', { force: true });
+            cy.get('#j_password').type('rifat123', { force: true });
             cy.contains('Sign In').click({ force: true });
         });
     });
@@ -32,7 +32,7 @@ describe('Rokomari Test', () => {
         cy.url().should("include", "https://www.rokomari.com/login");
         cy.get('form').within(() => {
             cy.get('#j_username').type('01688329403', { force: true });
-            cy.get('#j_password').type('Qweqwer6tr32*', { force: true });
+            cy.get('#j_password').type('rifat123', { force: true });
             cy.contains('Sign In').click({ force: true });
         });
 
